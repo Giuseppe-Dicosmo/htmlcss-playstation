@@ -4,6 +4,14 @@
   right: 0;
 }
 
-.hover_none:hover a{
+nav .hover_none:hover a{
   background-color: transparent;
+}
+
+.vita::after{
+  display: none;
+}
+
+.ciao{
+  list-style-type: circle;
 }
