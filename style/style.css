@@ -12,6 +12,48 @@ nav .hover_none:hover a{
   display: none;
 }
 
-.ciao{
-  list-style-type: circle;
+/* jumbo */
+.ps_bull span:first-child{
+  color: blue;
+  font-size: 20px;
+}
+
+.ps_card-img > img{
+  height: 650px;
+}
+
+.ps_card-img-title > img{
+  width: 250px;
+}
+
+.ps_card-img-text{
+  width: 500px;
+  height: 100%;
+  padding-bottom: 50px;
+  left: 50px;
+}
+
+.ps_button-card-text{
+  color: white;
+  background-color: #cd3d0f;
+  border: transparent;
+  padding: 5px 15px;
+}
+
+/* card */
+.ps_rounded-external{
+  border-radius: 20px;
+  border: 0px solid #318dd7;
+  transition: all 0.3s linear;
+}
+
+.ps_hover_card:hover .ps_rounded-external{
+  border-radius: 20px;
+  border: 4px solid #318dd7;
+  margin-top: -30px;
+}
+
+.ps_rounded-internal {
+  border-radius: 20px;
+  border: 1px solid white;
 }
