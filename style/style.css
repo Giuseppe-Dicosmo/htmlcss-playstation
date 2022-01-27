@@ -1,0 +1,9 @@
+/* navigazione */
+.ps_container-fluid{
+  left: 0;
+  right: 0;
+}
+
+.hover_none:hover a{
+  background-color: transparent;
+}
