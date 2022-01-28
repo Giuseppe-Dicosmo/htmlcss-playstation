@@ -27,6 +27,11 @@ nav .hover_none:hover a{
   background-size: cover;
 }
 
+.ps_Background-game-new{
+  background: url(../img/it-takes-two-hero-banner-desktop.jpg) center no-repeat;
+  background-size: cover;
+}
+
 .ps_Background-game .row{
   min-height: 600px;
 }
@@ -58,4 +63,24 @@ ul {
 .debug_border{
   border: 1px solid red;
 }
+
+/* Accessori */
+.ps_opacity{
+  opacity: 0.6;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s;
+}
+
+.ps_opacity-hover:hover, .ps_opacity-hover.active{
+  opacity: 1;
+  border-bottom: 2px solid #0070d1;
+  cursor: pointer;
+}
+
+.border_radius{
+  border-radius: 15px;
+  border: #212529;
+}
+
+
 
