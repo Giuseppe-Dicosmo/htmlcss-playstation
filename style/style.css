@@ -1,4 +1,8 @@
 /* navigazione */
+header {
+  display: contents;
+}
+
 .ps_container-fluid{
   left: 0;
   right: 0;
@@ -12,57 +16,46 @@ nav .hover_none:hover a{
   display: none;
 }
 
-/* jumbo */
 .ps_bull span:first-child{
   color: blue;
   font-size: 20px;
 }
 
-.ps_card-img > img{
-  height: 650px;
+/* jumbo */
+.ps_Background-game{
+  background: url(../img/jumbo-bg.png) center no-repeat;
+  background-size: cover;
 }
 
-.ps_card-img-title > img{
-  width: 250px;
+.ps_Background-game .row{
+  min-height: 600px;
 }
 
-.ps_card-img-text{
-  width: 500px;
-  height: 100%;
-  padding-bottom: 50px;
-  left: 50px;
-}
-
-.ps_button-card-text{
-  color: white;
+.ps_btn-orange{
   background-color: #cd3d0f;
-  border: transparent;
-  padding: 5px 15px;
 }
 
 /* card */
-.ps_rounded-external{
-  border-radius: 20px;
-  border: 0px solid #318dd7;
-  transition: all 0.3s linear;
+ul {
+  list-style-type: none;
 }
 
-.ps_hover_card:hover .ps_rounded-external, .ps_rounded-external-active{
-  border-radius: 20px;
-  border: 4px solid #318dd7;
-  margin-top: -30px;
+.ps_hover_card {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 4px solid transparent;
+  transition: all 0.5s;
 }
 
-.ps_rounded-internal {
-  border-radius: 20px;
-  border: 1px solid white;
-}
-
-.ps_title{
-  font-size: 40px;
-  line-height: 30px;
+.ps_hover_card.active, .ps_hover_card:hover{
+  border: 4px solid var(--bs-blue);
+  box-shadow: inset 0 0 2px white;
+  outline: 2px solid white;
+  outline-offset: -4px;
+  transform: translate( 0, -20px);
 }
 
 .debug_border{
   border: 1px solid red;
 }
+
