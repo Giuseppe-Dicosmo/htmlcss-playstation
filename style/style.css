@@ -16,8 +16,28 @@ nav .hover_none:hover a{
   display: none;
 }
 
-.ps_bull span:first-child{
-  color: blue;
+.navbar .nav-item .ps_text-dark{
+  color: var(--bs-dark);
+  font-weight: 500;
+}
+
+.navbar .nav-item .ps_text-dark:hover{
+  color: var(--bs-blue);
+}
+
+.icons-nav{
+  font-size: 14px;
+  color: #a3a3a3;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover .icons-nav{
+  color: var(--bs-blue);
+  transform: rotate(180deg);
+}
+
+.ps_bull span{
+  color: var(--bs-blue);
   font-size: 20px;
 }
 
