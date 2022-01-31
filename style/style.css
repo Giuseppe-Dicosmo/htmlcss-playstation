@@ -1,3 +1,7 @@
+:root {
+  --font-weight-500: 500;
+  --bs-black: black;
+}
 
 body::-webkit-scrollbar {
   width: 1em;
@@ -8,14 +12,23 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #cccccc;
-  box-shadow: inset 1px 1px 5px #999999;
-  border-radius: 3px;
+  background-color: rgba(204, 204, 204, 0.5);
+  box-shadow: inset 1px 1px 5px rgba(153, 153, 153, 0.5);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(204, 204, 204, 1);
+  box-shadow: inset 1px 1px 5px rgba(153, 153, 153, 1);
 }
 
 /* navigazione */
 header {
   display: contents;
+}
+
+.ps_bg-black{
+  background-color: var(--bs-black);
 }
 
 nav .hover_none:hover a{
@@ -27,8 +40,8 @@ nav .hover_none:hover a{
 }
 
 .navbar .nav-item .ps_text-dark{
-  color: var(--bs-dark);
-  font-weight: 500;
+  color: var(--bs-black);
+  font-weight: var(--font-weight-500);
 }
 
 .navbar .nav-item .ps_text-dark:hover{
@@ -44,6 +57,10 @@ nav .hover_none:hover a{
 nav ul li a:hover .icons-nav{
   color: var(--bs-blue);
   transform: rotate(180deg);
+}
+
+.ps_dropdown-item-shadow:hover{
+  box-shadow: 0px 0px 10px #a3a3a3;
 }
 
 .ps_bull span{
@@ -99,6 +116,7 @@ ul {
 .ps_opacity{
   opacity: 0.6;
   border-bottom: 2px solid transparent;
+  height: 100%;
   transition: all 0.5s linear;
 }
 
