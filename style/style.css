@@ -126,6 +126,26 @@ ul {
   cursor: pointer;
 }
 
+body{
+  overflow-x: hidden;
+}
+
+
+/* nuove uscite */
+
+.carousel-control-prev{
+  left: -10%;
+}
+
+.carousel-control-next{
+  right: -10%;
+
+}
+
+.carousel-indicators{
+  bottom: -5%;
+}
+
 .border_radius{
   border-radius: 15px;
   border: transparent;
